@@ -108,11 +108,17 @@ p {
     display: flex;
     font-size: 5.0rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 70.2rem) {
     .card1{
         transform: translateX(69%);
     }
 }
+@media screen and (max-width: 69.2rem) {
+    .card1{
+        transform: translateX(45%);
+    }
+}
+
 .card1 #time {
     color: #cb9183
 }
