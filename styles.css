@@ -68,6 +68,7 @@ p {
     }
 }
 
+
 #toggle .indicator {
     position: absolute;
     top: 0;
@@ -90,7 +91,12 @@ p {
     height: 4rem;
     cursor: pointer;
 }
-
+@media screen and (max-width: 600px) {
+    #arrow img {
+        margin-top: 0.5rem;
+        
+    }
+}
 #toggle.active .indicator {
     top: 5.5rem;
     background: linear-gradient(to bottom, #ff6596, #60bef8, #d88cff);
@@ -108,9 +114,11 @@ p {
     display: flex;
     font-size: 5.0rem;
 }
-@media screen and (max-width: 70.2rem) {
+@media screen and (max-width: 75.2rem) {
     .card1{
         transform: translateX(69%);
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
     }
 }
 @media screen and (max-width: 69.2rem) {
@@ -118,7 +126,14 @@ p {
         transform: translateX(45%);
     }
 }
-
+@media screen and (max-width: 600px) {
+    .card1 {
+        transform: translateX(40%);
+        font-size: 4rem;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+    }
+}
 .card1 #time {
     color: #cb9183
 }
@@ -135,6 +150,12 @@ p {
     margin-bottom: 1rem;/*here*/
     font-size: 2.3rem;
 }
+@media screen and (max-width: 600px) {
+    .quto {
+        
+        margin-bottom: 14rem;
+    }
+}
 .hidden {
     opacity: 0;
     display: none !important;
@@ -150,7 +171,11 @@ p {
     opacity: 1;
     transition: opacity 2s ease-in-out; /* Add a transition for opacity */
 }
-
+@media screen and (max-width: 768px) {
+    .loading-container {
+        padding-left: 2em;
+    }
+}
 .loading-container p {
     text-transform: uppercase;
 }
