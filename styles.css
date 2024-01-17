@@ -57,12 +57,14 @@ p {
                 inset 0 8px 60px rgba(0,0,0,0.1),
                 inset 0 -4px 4px rgba(0,0,0,0.1);
 }
-@media screen and (max-width: 768px) {
-    #toggle {
-        bottom: .5rem;
-        right: .5rem;
-        height: 6.0rem;
-        width: 3.0rem;
+@media screen and (max-width: 99.8rem) {
+    html {
+        font-size: 62.5%;
+    }
+}
+@media screen and (max-width: 70.0rem) {
+    html {
+        font-size: 45%;
     }
 }
 
@@ -106,7 +108,11 @@ p {
     display: flex;
     font-size: 5.0rem;
 }
-
+@media screen and (max-width: 768px) {
+    .card1{
+        transform: translateX(69%);
+    }
+}
 .card1 #time {
     color: #cb9183
 }
