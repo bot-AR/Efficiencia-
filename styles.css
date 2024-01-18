@@ -173,11 +173,18 @@ p {
 }
 @media screen and (max-width: 768px) {
     .loading-container {
-        padding-left: 2em;
+        padding-left: 15em;
+        
     }
 }
 .loading-container p {
     text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+    .loading-container p {
+        padding-left: 3em;
+        
+    }
 }
 
 .box {
@@ -317,4 +324,11 @@ h2 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 768px) {
+    .main-container {
+        margin-top: 0.000001rem;
+        
+        
+    }
 }
