@@ -15,6 +15,10 @@ body {
     background-size: 200% 200%; 
     animation: gradientAnimation 10s ease infinite;
 }
+.container.active {
+    background: linear-gradient(60deg,#654033,#111213e8,#473333);
+    animation: gradientAnimation 10s ease infinite;
+}
 @keyframes gradientAnimation {
     0% {
         background-position: 0% 50%;
@@ -39,10 +43,7 @@ p {
     font-size: 2.1rem; 
 }
 
-.container.active {
-    background: linear-gradient(60deg,#654033,#111213e8,#473333);
-    animation: gradientAnimation 10s ease infinite;
-}
+
 
 #toggle {
     position: fixed;
@@ -93,13 +94,20 @@ p {
 
 #arrow img {
     padding-left: 20%;
-    margin-top: 1rem; /*here*/
+    margin-top: 6rem; /*here*/
+    height: 4rem;
+    cursor: pointer;
+}
+#arrow2 img {
+    padding-left: 20%;
+    margin-top: 6rem; 
     height: 4rem;
     cursor: pointer;
 }
 @media screen and (max-width: 600px) {
     #arrow img {
         margin-top: 0.5rem;
+        margin-top: 5rem;
         
     }
     .hero{
@@ -116,23 +124,16 @@ p {
     width: 28.0rem;
     height: 14.0rem;
     border-radius: 2.0rem;
-    background: linear-gradient(to right,rgb(241, 219, 177),#fff);
-    transform: translateX(115%);
+    background: linear-gradient(to right,rgb(241, 208, 145),#fff);
+    transform: translateX(105%);
     align-items: center;
     justify-content: center;
+    font-weight: bold;
     display: flex;
     font-size: 5.0rem;
+    animation: gradientAnimation 10s ease infinite;;
 }
-@media screen and (max-width: 75.2rem) {
-    .card1{
-        transform: translateX(69%);
-        margin-top: 1.5rem;
-        margin-bottom: 0.5rem;
-    }
-    .hero{
-        transform: translate(-40%);
-    }
-}
+
 @media screen and (max-width: 69.2rem) {
     .card1{
         transform: translateX(45%);
@@ -156,10 +157,34 @@ p {
     }
     #arrow{
         transform: translate(-15%);
+        margin-top: 5rem;
     }
     .main-container{
         padding-bottom: 15rem;
     }
+
+    .loading-container p {
+        padding-left: 3em;
+        
+    }
+   
+    .quto {
+        margin-left: 3rem;
+        margin-bottom: 21rem;
+    }
+    #arrow2{
+        transform: translate(-15%);
+    }
+    #efficienciaButton {
+        
+        right: 80%;
+        cursor: pointer;
+        text-align: center;
+        position: absolute;
+        justify-content: center;
+    }
+
+   
     
 }
 .card1 #time {
@@ -178,16 +203,13 @@ p {
     margin-bottom: 1rem;/*here*/
     font-size: 2.3rem;
 }
-@media screen and (max-width: 600px) {
-    .quto {
-        
-        margin-bottom: 14rem;
-    }
-}
+
 .hidden {
     opacity: 0;
     display: none !important;
 }
+
+
 
 .loading-container {
     position: absolute;
@@ -199,18 +221,53 @@ p {
     opacity: 1;
     transition: opacity 2s ease-in-out; /* Add a transition for opacity */
 }
-@media screen and (max-width: 768px) {
-    .loading-container {
-        padding-left: 15em;
-        
-    }
-}
+
 .loading-container p {
     text-transform: uppercase;
 }
 @media screen and (max-width: 768px) {
-    .loading-container p {
-        padding-left: 3em;
+    .loading-container {
+        padding-left: 8rem;
+        
+    }
+    .card1{
+        transform: translateX(39%);
+    }
+    .hero{
+        transform: translate(-40%);
+    }
+    .main-container{
+        padding-bottom: 14rem;
+       
+    }
+    .quto {
+        
+        margin-bottom: 14rem;
+        margin-left: 1rem;
+    }
+    #arrow2{
+        transform: translate(-15%);
+    }
+    #effic{
+        width: 30rem;
+        right: 37%;
+    }
+
+    #efficienciaButton {
+        
+        right: 93%;
+        width: 30rem;
+        height: 5.6rem;
+       
+    }
+    .main-container {
+        margin-top: 0.000001rem;
+        
+        
+    }
+    .main-container {
+        margin-top: 0.000001rem;
+        
         
     }
 }
@@ -353,35 +410,41 @@ h2 {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-@media screen and (max-width: 768px) {
-    .main-container {
-        margin-top: 0.000001rem;
-        
-        
-    }
-}
-@media screen and (max-width: 768px) {
-    .main-container {
-        margin-top: 0.000001rem;
-        
-        
-    }
-}
-.effic{
-    display:flex;
-}
-button {
-    padding: 10px 20px;
-    font-size: 16px;
+
+#efficienciaButton {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: linear-gradient(to right,rgb(231, 190, 114),#e08e8e);
+    color: white;
+    font-weight: bold;
     border: none;
+    border-radius: 1rem;
     cursor: pointer;
-    border-radius: 5px;
-    transform: translate(50%);
+    text-align: center;
+    position: absolute;
+    justify-content: center;
+    margin-left: 9.1rem;
+    transform: translate(95%);
+    font-size: medium;
 }
-.btn1 {
-    background-color: #FF595E; /* Red color for Decrement button */
-    color: #fff;
+#effic{
+    margin-top: 1rem;
+    padding: 1rem;
+    background: linear-gradient(to right,rgb(204, 160, 79),#e27272);
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 1rem;
+    cursor: pointer;
+    text-align: center;
+    position: absolute;
+    justify-content: center;
+    margin-left: 6.8rem;
+    transform: translate(20%);
+    font-size: medium;
 }
-c{
-    color: #5e4a4a;
+
+#efficienciaPercentage {
+    margin-left: 1rem;
 }
+
