@@ -93,14 +93,12 @@ p {
 }
 
 #arrow img {
-    
     padding-left: 20%;
     margin-top: 6rem; /*here*/
     height: 4rem;
     cursor: pointer;
 }
 #arrow2 img {
-    visibility: visible; 
     padding-left: 20%;
     margin-top: 6rem; 
     height: 4rem;
